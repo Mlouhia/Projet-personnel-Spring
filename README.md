@@ -71,7 +71,9 @@ Content-Type: application/json
 }
 
 Scénario 2 (méthode: modifierAdresseSC2, classe: AbonneController)
+
 Exemple d'appel: 
+
 POST http://localhost:8080/ModifierAdresseSC2
 
 Content-Type: application/json
@@ -82,11 +84,13 @@ Content-Type: application/json
 }
 
 4- Récupérer les informations sur les contrats (méthode: getAbonneContrat, classe: ContratController):
+
 Exemple d'appel:
 
 GET http://localhost:8080/abonneGetContrat/1
 
 5- Récupérer l’historique des mouvements de modification (méthode: getAbonneModifications, classe: MouvementController):
+
 Exemple d'appel:
 
 GET http://localhost:8080/abonneGetModifications/1
