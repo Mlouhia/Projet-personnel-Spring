@@ -37,7 +37,7 @@ POST http://localhost:8080/abonne
 Content-Type: application/json
 
 {
-  "adressePrincipale":"36 rue baudin Courbevoie",
+  "adressePrincipale":"36 rue baudin Paris",
   "nom": "Mlouhia",
   "prenom": "Yassine"
 }
@@ -66,7 +66,7 @@ POST http://localhost:8080/ModifierAdresseSC1
 Content-Type: application/json
 
 {
-  "adressePrincipale":"23 Avenue de la sygrie Clamart",
+  "adressePrincipale":"23 Avenue de la sygrie Paris",
   "id": 1
 }
 
