@@ -25,10 +25,13 @@ Le package repository contient les classes qui assurenent la communication avec 
 Pour Utiliser l'application, il faut exécuter la classe GestionAbonneApplication qui lance l'application et crée l'application context de Spring Boot.
 
 L'application présente 5 web services: 
+
 Remarque: Le deuxième scénraio est traité dans le meme projet dans le web service modifierAdresseSC2 dans la classe AbonneController. LE web service modifierAdresseSC1 est destiné au premier scénario.
 
 1- Création d'un abonné (méthode: creerAbonner, classe: AbonneController)
+
 Exemple d'appel:
+
 POST http://localhost:8080/abonne
 Content-Type: application/json
 
@@ -39,7 +42,9 @@ Content-Type: application/json
 }
 
 2- souscrire un contrat (méthode: creerContrat, classe: ContratController)
+
 Exemple d'appel:
+
 POST http://localhost:8080/contrat
 Content-Type: application/json
 
@@ -49,8 +54,11 @@ Content-Type: application/json
 }
 
 3- Modifier l'adresse d'un abonné: 
+
 Scénario 1 (méthode: modifierAdresseSC1, classe: AbonneController)
+
 Exemple d'appel: 
+
 POST http://localhost:8080/ModifierAdresseSC1
 Content-Type: application/json
 
