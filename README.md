@@ -1,13 +1,3 @@
-# Test-technique
-
-*Question 3: Bonnes pratiques pour garantir la qualité de code:
-- Règles de nommage: Classes en upper Camel Case - Fonctions et variables en miniscule - Constantes en majuscule (dans la classe enumération TypeModification)
-- Commentaires: toutes les déclarations de variables ou de fonctions et les bouts de code sont précédés par des commentaires pour expliquer l'objectif.
-- Nom des variables: tous les noms de variables et de fonctions sont significatifs et décrivent bien l'objectif de la déclaration.
-- Les tests automatisés testsNG et les tests Cucumber (approche BDD)
-- Dans les classes modèles, les attributs sont privés et l'accès à ces variables est assuré par des getteurs et setteurs.
-
-
 
 *Tutoriel de l'application:
 
@@ -25,8 +15,6 @@ Le package repository contient les classes qui assurenent la communication avec 
 Pour Utiliser l'application, il faut exécuter la classe GestionAbonneApplication qui lance l'application et crée l'application context de Spring Boot.
 
 L'application présente 5 web services: 
-
-Remarque: Le deuxième scénraio est traité dans le meme projet dans le web service modifierAdresseSC2 dans la classe AbonneController. LE web service modifierAdresseSC1 est destiné au premier scénario.
 
 1- Création d'un abonné (méthode: creerAbonner, classe: AbonneController)
 
