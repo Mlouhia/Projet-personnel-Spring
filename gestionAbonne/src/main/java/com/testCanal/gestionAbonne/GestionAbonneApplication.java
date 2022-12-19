@@ -8,6 +8,7 @@ public class GestionAbonneApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GestionAbonneApplication.class, args);
+		//String[] beans = appContext.getBeanDefinitionNames();
 	}
 
 }

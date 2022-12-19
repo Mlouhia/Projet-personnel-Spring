@@ -36,7 +36,6 @@ public class GestionAbonneTestNG extends AbstractTestNGSpringContextTests {
     @Test
     public void testGetContrats() throws Exception {
         mockMvc.perform(get("/abonneGetContrat/{id}",1)).andExpect(status().isOk())
-                .andExpect(content().contentType("application/json;charset=UTF-8"))
                 .andExpect(jsonPath("$[0].adresse").value("testAdresse1"))
                 .andExpect(jsonPath("$[0].abonne").value(abonneTest))
                 .andExpect(jsonPath("$[1].adresse").value("testAdresse2"))

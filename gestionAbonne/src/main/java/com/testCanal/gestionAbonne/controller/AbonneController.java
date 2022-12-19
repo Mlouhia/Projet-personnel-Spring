@@ -11,9 +11,6 @@ import com.testCanal.gestionAbonne.service.AbonneService;
 import com.testCanal.gestionAbonne.service.ContratService;
 import com.testCanal.gestionAbonne.service.MouvementService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,10 +31,6 @@ public class AbonneController
     @Autowired
     ContratService contratService;
 
-    //autowired the Mouvement class
-    @Autowired
-    Mouvement mouvement;
-
     //creer un nouvel abonné
     @PostMapping("/abonne")
     private int creerAbonner(@RequestBody Abonne abonne)
@@ -57,6 +50,7 @@ public class AbonneController
         abonneService.saveOrUpdate(abonneAmodifier);
 
         // il faut créer un nouveau mouvement
+        Mouvement mouvement = new Mouvement();
         mouvement.setTypeModification(TypeModification.MODIFICATION_ADRESSE_PRINCIPALE);
         mouvement.setDate(new Date());
         mouvement.setAncienneValeur(ancienneAdresse);
@@ -88,6 +82,7 @@ public class AbonneController
         contratService.saveOrUpdate(contrat);
 
         // il faut créer un nouveau mouvement
+        Mouvement mouvement = new Mouvement();
         mouvement.setTypeModification(TypeModification.MODIFICATION_ADRESSE_PRINCIPALE);
         mouvement.setDate(new Date());
         mouvement.setAncienneValeur(ancienneAdresse);
